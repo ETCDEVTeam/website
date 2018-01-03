@@ -15,9 +15,9 @@ https://github.com/ethereumproject/emerald-js[**emerald-js**], a young library o
 
 https://github.com/ethereumproject/emerald-cli/releases[**emerald-cli**] released v0.19.0, which fixes an HD path parsing bug.
 
-https://github.com/ethereumproject/emerald-rs/releases[**emerald-rs**] released v0.18.1, including a public `mnemomic` module and a few bug fixes.
+https://github.com/ethereumproject/emerald-rs/releases[**emerald-rs**] released v0.19.0, including a public `mnemomic` module, an HD path parsing fix, and a few various minor upgrades.
 
-https://github.com/ethereumproject/go-ethereum[**go-ethereum**] master branch includes experimental support for https://github.com/ethereumproject/sputnikvm[SputnikVM], on-filesystem debug logging with automatic and configurable log compression and rotation, a rebuilt simpler UI, and support for user-configurable `GOMAXPROCS` environment variable.
+https://github.com/ethereumproject/go-ethereum[**go-ethereum**] released https://github.com/ethereumproject/go-ethereum/releases/tag/v4.2.0[v4.2.0] including experimental support for https://github.com/ethereumproject/sputnikvm[SputnikVM], on-filesystem debug logging with automatic and configurable log compression and rotation, a rebuilt simpler UI, and support for user-configurable `GOMAXPROCS` environment variable.
 
 https://github.com/ethereumproject/sputnikvm[**sputnikvm**] got some initial performance profiling and refactoring.
 

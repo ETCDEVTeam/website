@@ -23,19 +23,11 @@ https://github.com/ethereumproject/sputnikvm[**sputnikvm**] got some initial per
 
 https://github.com/ethereumproject/etcommon-rs[**etcommon-rs**] implemented basic pruning and garbage collection support.
 
-=== protocols
-
-https://github.com/ethereumproject/ECIPs/pull/80[**ECIP-1036**] if merged, would establish specifications for the **permanent difficulty bomb diffusal** at block 5452163 (around this month or February); if you'd like to be involved in Ethereum Classic protocol policy, please feel welcome to add your thoughts and questions there.
-
-https://github.com/ethereumproject/ECIPs/pull/81[**ECIP-1037**] proposes a simple, non-interactive URI scheme, which would enable users to easily make payments and interact with smart contracts by simply clicking links on webpages or scanning QR Codes.
-
-https://github.com/ethereumproject/ECIPs/pull/86[**ECIP-1040**] proposes a generalized account versioning scheme for hard forks, by allowing multiple versions of the virtual machines to execute in the same block.
-
 
 ---
 
 We are extremely grateful to *the many volunteers and members of our community* for
-so many creative, thoughtful, and ongoing contributions to our core projects and others.
+so many creative, thoughtful, and ongoing contributions.
 
 ---
 

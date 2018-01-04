@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Roadmap for 2018
+title: 2017 recap and plans for 2018
 published: true
 date: 02.01.2018 09:00
 ---

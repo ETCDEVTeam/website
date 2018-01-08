@@ -8,8 +8,7 @@ published: true
     <div class="container">
         <div class="row">
             <h2 class="heading">General Roadmap</h2>
-            <p class="subheading">ETCDEV Team plans for 2017-2019, all protocol related
-                details will be discussed with community</p>
+            <p class="subheading">ETCDEV Team plans for 2018-2020</p>
         </div>
 
         <div class="row">
@@ -19,14 +18,14 @@ published: true
             <div class="col-xs-10">
                 <h5>Short term goals</h5>
                 <ul>
-                    <li>Platform stabilization</li>
-                    <li>Tools for 3rd party developers</li>
+                    <li>Scalability through sidechains</li>
+                    <li>IoT</li>
+                    <li>Help 3rd party developers to build apps on top of ETC</li>
                 </ul>
                 <h5>2-3 year goals</h5>
                 <ul>
-                    <li>Scalability for large internet services and IoT</li>
-                    <li>Keep it small enough for home users</li>
                     <li>Better security and encryption</li>
+                    <li>Interoperability with other blockchains</li>
                 </ul>
             </div>
         </div>
@@ -37,27 +36,18 @@ published: true
 
         <div class="row">
             <div class="col-xs-2 calendar">
-                <h3><i class="mdi mdi-calendar-clock"></i></h3> <h4>2017</h4>
-            </div>
-            <div class="col-xs-10">
-                <ul>
-                    <li>New Monetary Policy <small>(ECIP-1017)</small></li>
-                    <li>Emerald Wallet</li>
-                    <li>Dapp SDK <small>(based on Emerald Project)</small></li>
-                    <li>Standalone & embeddable EVM <small>(with debugger for EVM code)</small></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-2 calendar">
                 <h3><i class="mdi mdi-calendar-clock"></i></h3> <h4>2018</h4>
             </div>
             <div class="col-xs-10">
                 <ul>
-                    <li>Light client for IoT and Mobile</li>
-                    <li>Scalability improvement and sharding <small>(towards to 1,000+ tx/sec)</small></li>
-                    <li>Improve cryptography on EVM <small>(for zero knowledge proof,
-                        homomorphic encryption, etc)</small></li>
+                    <li>Remove Difficulty Bomb</li>
+                    <li>Emerald Wallet for Mobile</li>
+                    <li>Release Dapp SDK <small>(Emerald Project)</small></li>
+                    <li>Sidechains</li>
+                    <li>Enable new opcodes from ETH <small>(compatibility)</small></li>
+                    <li>IPFS integration</li>
+                    <li>SputnikVM optimizations and JIT Compilation</li>
+                    <li>New improved statedb layer</li>
                 </ul>
             </div>
         </div>
@@ -67,189 +57,180 @@ published: true
             </div>
             <div class="col-xs-10">
                 <ul>
+                    <li>Scalability improvement and sharding <small>(towards to 1,000+ tx/sec)</small></li>
+                    <li>Light client for IoT and Mobile</li>
+                    <li>Interoperability with other blockchains</li>
+                    <li>Improve cryptography on EVM <small>(for zero knowledge proof,
+                        homomorphic encryption, etc)</small></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2 calendar">
+                <h3><i class="mdi mdi-calendar-clock"></i></h3> <h4>2020</h4>
+            </div>
+            <div class="col-xs-10">
+                <ul>
                     <li>Hybrid consensus research</li>
+                    <li>Mesh networks</li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
 
-<section>
+<% def months = [] %>
+
+<section class='roadmap'>
     <div class="container">
         <div class="row">
-            <hr/>
-            <div class="col-xs-12 text-center">
-                <h2>Detailed Roadmap for current projects</h2>
+            <h2 class="heading">Detailed Roadmap for 2018</h2>
+            <p class="subheading">Please be advised that following plan is subject to change. This plan
+                is preliminary and reflects only major steps, during the year we can face unexpected
+                challenges, or do a pivot to a more optimal direction. Minor releases, maintenance, experimental
+                and secret projects are not reflected below</p>
+        </div>
+
+        <%
+        months = [
+        [
+            calend: "Feb",
+            goals: [
+                "Introduction of Sidechains architecture",
+                "Enable SputnikVM in Geth"
+            ]
+        ],
+        [
+            calend: "Mar",
+            goals: [
+                "First public release of Emerald Desktop Wallet",
+                "Warp sync in Geth"
+            ]
+        ],
+        [
+            calend: "Apr",
+            goals: [
+                "Beta of Emerald Mobile Wallet",
+                "Disable difficulty bomb",
+            ]
+        ],
+        [
+            calend: "May",
+            goals: [
+                "Working prototype of Sidechain",
+                "Enable new Opcodes for compatibility with ETH"
+            ]
+        ],
+        [
+            calend: "Jun",
+            goals: [
+                "PoC of new StateDB layer",
+                "Emerald Mobile Wallet"
+            ]
+        ],
+        [
+            calend: "Jul",
+            goals: [
+                "Sidechains support in Emerald Project",
+                "Emerald SDK First Release"
+            ]
+        ],
+        [
+            calend: "Aug",
+            goals: [
+                "JIT Compilation in SputnikVM"
+            ]
+        ],
+        [
+            calend: "Sep",
+            goals: [
+                "Integrated cross transactions with external blockchains",
+                "New StatDB Layer"
+            ]
+        ],
+        [
+            calend: "Oct",
+            goals: [
+                "IPFS support by Emerald"
+            ]
+        ],
+        [
+            calend: "Nov",
+            goals: [
+                "Fully IoT-compatible infrastructure of ETC"
+            ]
+        ],
+        [
+            calend: "Dec",
+            goals: [
+                "Upgrade EVM (new opcodes and optimizations)"
+            ]
+        ],
+        ];
+        %>
+        <% months.each { phase -> %>
+        <div class="row">
+            <div class="col-xs-2 calendar">
+                <h3><i class="mdi mdi-calendar-clock"></i></h3>
+                <h4>${phase.calend}</h4>
+            </div>
+            <div class="col-xs-10">
+                <ul>
+                <% phase.goals.each { goal -> %>
+                <li>${goal}</li>
+                <% } %>
+                </ul>
             </div>
         </div>
+        <% } %>
     </div>
+
 </section>
 
 <section class="roadmap">
     <div class="container">
         <div class="row">
-            <h2 class="heading">Monetary Policy</h2>
-            <p class="subheading">ECIP-1017 - modified Monetary Supply to add cap to total coins</p>
+            <h2 class="heading">Main Projects</h2>
+            <!--<p class="subheading"></p>-->
         </div>
-        <%
-        def ecip1017 = [
-            [
-            calend: "Feb",
-            title: "Discussion <small>Agreed</small>",
-            description: "Initial discussion of ECIP-1017 with the community"
-            ],
-            [
-            calend: "Mar",
-            title: "Geth architecture redesign <small>Done</small>",
-            description: "Prepare Geth to support different model of monetary supply, instead of current hardcoded one."
-            ],
-            [
-            calend: "Apr",
-            title: "Implementation <small>Done</small>",
-            description: "Implement and test ECIP-1017 Monetary Policy in Geth code"
-            ],
-            [
-            calend: "Jun",
-            title: "Add Support to Parity <small>Done</small>",
-            description: "Implement and test ECIP-1017 Monetary Policy in Parity code"
-            ],
-            [
-            calend: "Aug",
-            title: "Testnet <small>Done</small>",
-            description: "Run new monetary policy on private testnet, then release to public testnet"
-            ],
-            [
-            calend: "Aug",
-            title: "Enable in mainnet <small>Done</small>",
-            description: "After we'll see that we don't have any issues on Testnet, we can configure and enable ECIP-1017 " +
-                "Monetary Policy for Mainnet. First change to Coin Issues will happen at block 5,000,000 which is " +
-                "expected at the end of 2017 year."
-            ]
-        ];
-        %>
 
-        <% ecip1017.each { phase -> %>
         <div class="row">
-            <div class="col-xs-2 calendar">
-                <h3><i class="mdi mdi-calendar-clock"></i></h3>
-                <h4>${phase.calend}</h4>
-            </div>
-            <div class="col-xs-10">
-                <h3>${phase.title}</h3>
-                <p>${phase.description}</p>
-            </div>
+            <h3>Classic Geth <small>/ <a href="https://github.com/ethereumproject/go-ethereum"><i class="fa fa-github"></i> github</a></small></h3>
+            <p>
+                ETCDEV have been maintaining and improving Geth since the fork, and going to continue this
+                work with focus on architecture modularization, performance improvements and makign it more friendly
+                for using in business environment. Classic Geth is a fork of ETH Geth but developed separately since
+                October 2016, up to 50% of the current code is rewritten/replaced/removed
+            </p>
         </div>
-        <% } %>
+
+        <div class="row">
+            <h3>Sputnik VM <small>/ <a href="https://github.com/ethereumproject/sputnikvm"><i class="fa fa-github"></i> github</a></small></h3>
+            <p>
+                Next generation of EVM developed by ETCDEV team. It's a separate embeddable EVM, compatible with
+                different types of Ethereum blockchains, compatible with IoT. ETCDEV is going to work on further
+                improvements, parallel execution, optimizations for different hardware architectures and
+                Just-In-Time compilation for EVM bytecode.
+            </p>
+        </div>
+
+        <div class="row">
+            <h3>Emerald Platform <small>/ <a href="https://github.com/ethereumproject/emerald-platform"><i class="fa fa-github"></i> github</a></small></h3>
+            <p>
+                Toolkit to build applications running on Ethereum ETC, contains UI Components, Libraries for Javascript
+                and Rust, Icons, Build tools, etc. Targeting various platforms, such as Desktop, Mobile, Web and
+                even Shell Scripting.
+            </p>
+        </div>
+
+        <div class="row">
+            <h3>Sidechains</h3>
+            <p>
+                New project for 2018, sidechain implementation as native part of ETC infrastructure and protocols
+                as a way to add scalability and bring ETC to IoT
+            </p>
+        </div>
+
+
     </div>
-</section>
-
-<section class='roadmap'>
-    <div class="container">
-        <div class="row">
-            <h2 class="heading">Emerald Platform</h2>
-            <p class="subheading">Reference Ethereum Classic wallet and a SDK for 3rd party developers</p>
-        </div>
-
-        <%
-        def wallet = [
-            [
-            calend: "Mar",
-            title: "Development version <small>Done</small>",
-            description: "A MVP or proof of concept. Basic version suitable for developers to build and run on local machine"
-            ],
-            [
-            calend: "Apr",
-            title: "Internal Beta <small>Done</small>",
-            description: "Bundle for a desktop for testing"
-            ],
-            [
-            calend: "Jun",
-            title: "Public Beta <small>Done</small>",
-            description: "First public release of a desktop version"
-            ],
-            [
-            calend: "Jul",
-            title: "Polished version <small>Done</small>",
-            description: "UX/UI refactoring, professional design, installer, instructions and help"
-            ],
-            [
-            calend: "Oct",
-            title: "Release version <small>In Progress</small>",
-            description: "A version recommended for general use, with support of tokens and contracts"
-            ],
-            [
-            calend: "Nov",
-            title: "Contract Developer Suite",
-            description: "A desktop app built on top of SDK for Ethereum Classic contract developers (compile and deploy contracts, monitor state)"
-            ],
-            [
-            calend: "Nov",
-            title: "SDK for 3rd party developers",
-            description: "Release a SDK for 3rd party developers as a standalone set of tools to build full functional app. Provide Javascript UI components and libraries"
-            ]
-
-        ];
-        %>
-        <% wallet.each { phase -> %>
-        <div class="row">
-            <div class="col-xs-2 calendar">
-                <h3><i class="mdi mdi-calendar-clock"></i></h3>
-                <h4>${phase.calend}</h4>
-            </div>
-            <div class="col-xs-10">
-                <h3>${phase.title}</h3>
-                <p>${phase.description}</p>
-            </div>
-        </div>
-        <% } %>
-    </div>
-
-</section>
-
-<section class='roadmap'>
-    <div class="container">
-        <div class="row">
-            <h2 class="heading">Sputnik VM</h2>
-            <p class="subheading">A new EVM for Ethereum Classic</p>
-        </div>
-
-        <%
-        def sputnikvm = [
-        [
-        calend: "Apr",
-        title: "Initial version <small>Done</small>",
-        description: "As a standalone VM, and Rust lib. With socket api to communicate"
-        ],
-        [
-        calend: "Sep",
-        title: "Developer Server (testrpc) <small>Done</small>",
-        description: "Run a standalone EVM for contract development and testing, a TestRPC replacement"
-        ],
-        [
-        calend: "Oct",
-        title: "Debugging APIs <small>In Progress</small>",
-        description: "Ability to execute and get tracing/debugging details for arbitrary code against provided state"
-        ],
-        [
-        calend: "Dec",
-        title: "Geth Integration",
-        description: "Integrate into Classic Geth"
-        ],
-
-        ];
-        %>
-        <% sputnikvm.each { phase -> %>
-        <div class="row">
-            <div class="col-xs-2 calendar">
-                <h3><i class="mdi mdi-calendar-clock"></i></h3>
-                <h4>${phase.calend}</h4>
-            </div>
-            <div class="col-xs-10">
-                <h3>${phase.title}</h3>
-                <p>${phase.description}</p>
-            </div>
-        </div>
-        <% } %>
-    </div>
-
 </section>

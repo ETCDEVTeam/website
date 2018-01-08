@@ -44,7 +44,11 @@ p {
 }
 
 .roadmap {
+  .row {
+    padding-top: 20px;
+  }
   .calendar {
+
     h2, h3, h4 {
       color: $green;
       display: inline;

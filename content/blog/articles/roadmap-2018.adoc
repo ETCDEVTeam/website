@@ -64,4 +64,4 @@ going to improve it, find new ways of using it for practical applications and ma
 Of course we’re going to continue our work on _Emerald Platform_, going to release Emerald Desktop Wallet, make Mobile
 Wallet and few other Dapps. As well as help other companies to use Emerald Platform in their services.
 
-More detailed roadmap will be publish soon on the website, stay tuned.
+A more detailed roadmap will be published soon on the website, stay tuned.

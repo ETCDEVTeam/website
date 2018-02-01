@@ -7,21 +7,30 @@ date: 01.02.2018 09:00
 
 === projects
 
-https://github.com/ethereumproject/emerald-wallet[**emerald-wallet**] released https://github.com/ethereumproject/emerald-wallet/releases/tag/v0.7.0[RC2], fixing a few bugs, adding a new stable remote endpoint for mainnet, adding an *AppImage* distribution, UX improvements, backend updgrades, and continuing to shift some UI components to https://github.com/ethereumproject/emerald-js-ui[**emerald-js-ui**].
+https://github.com/ethereumproject/go-ethereum/releases/tag/v4.2.1[**ethereum-go**] released v4.2.0 and then v4.2.1,
+which brings a new console output which makes it much easier to monitor current status of Geth synchronization status.
+Now you can track the process of peer discovery, initial sync and how geth is catching new blocks at this moment.
 
-https://github.com/ethereumproject/emerald-cli/releases[**emerald-cli**] released v0.20.0, which includes upgraded emerald-rs version and stabilizes the formatter.
+https://github.com/ethereumproject/emerald-cli/releases[**emerald-cli**] released v0.20.0, which includes upgraded
+emerald-rs version and stabilizes the formatter.
 
-https://github.com/ethereumproject/emerald-rs/releases[**emerald-rs**] also released v0.20.0, including using a forked-and-improved https://github.com/ethereumproject/emerald-rocksdb[rust RocksDB database], refactorings, and improving CI management.
+https://github.com/ethereumproject/emerald-rs/releases[**emerald-rs**] also released v0.20.0, including using a
+forked-and-improved https://github.com/ethereumproject/emerald-rocksdb[rust RocksDB database], refactorings, and
+improving CI management.
 
-https://github.com/ethereumproject/go-ethereum[**go-ethereum**] has implemented a performance profiling option `--pprof`, fixed a few bugs, inlcuding one impacting resolver support on certain Linux distributions and another causing SputnikVM to fork on Morden network, and changed CI providers.
+https://github.com/ethereumproject/go-ethereum[**go-ethereum**] has implemented a performance profiling option
+`--pprof`, fixed a few bugs, including one impacting resolver support on certain Linux distributions and another
+causing SputnikVM to fork on Morden network, and changed CI providers.
 
-https://github.com/ethereumproject/sputnikvm[**sputnikvm**] has implemented many EIP features as optional patches enabling support for the Foundation chain and possible Byzantium fork.
+https://github.com/ethereumproject/sputnikvm[**sputnikvm**] has implemented many EIP features as optional patches
+enabling support for the Foundation chain and possible Byzantium fork.
 
 ---
 
 === protocols
 
-* https://github.com/ethereumproject/ECIPs/pull/87[ECIP-1041] is still at the top of the TODO list, please feel welcome to add your input. The deadline for taking action is approaching.
+* https://github.com/ethereumproject/ECIPs/pull/87[ECIP-1041] is still at the top of the TODO list, please feel welcome
+  to add your input. The deadline for taking action is approaching.
 
 ---
 

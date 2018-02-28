@@ -33,53 +33,22 @@ features: banner
         <p class="subheading"></p>
     </div>
     <div class="row team4">
-        <h2 class="heading">Engineers</h2>
 
         <%
         def people = [
-            [name: "Wei Tang", github: "sorpaas", nick: "sorpaas", role: "Rust Developer"],
-            [name: "Constantine Kryvomaz", github: "r8d8", nick: "bunda", role: "Rust Developer"],
-            [name: "Isaac Ardis", twitter: "isaacardis", github: "whilei", nick: "ia", role: "Go Developer"],
-            [name: "Yury", twitter: "cryptogagarin", github: "gagarin55", nick: "gagarin55", role: "Javascript Developer"],
-            [name: "Tomasz Zdybał", twitter: "tzdybal", github: "tzdybal", nick: "tzdybal", role: "Go Developer"],
-            [name: "Shane Jonas", twitter: "shanejonas", github: "shanejonas", nick: "shanejonas", role: "Javascript Developer"],
+            [name: "Wei Tang", github: "sorpaas", nick: "sorpaas", photo: "sorpaas", role: "Rust Developer"],
+            [name: "Constantine Kryvomaz", github: "r8d8", nick: "bunda", photo: "bunda", role: "Rust Developer"],
+            [name: "Isaac Ardis", twitter: "isaacardis", github: "whilei", nick: "ia", photo: "ia", role: "Go Developer"],
+            [name: "Yury", twitter: "cryptogagarin", github: "gagarin55", nick: "gagarin55", photo: "gagarin55", role: "Javascript Developer"],
+            [name: "Tomasz Zdybał", twitter: "tzdybal", github: "tzdybal", nick: "tzdybal", photo: "tzdybal", role: "Go Developer"],
+            [name: "Shane Jonas", twitter: "shanejonas", github: "shanejonas", nick: "shanejonas", photo: "shanejonas", role: "Javascript Developer"],
+            [name: "Richard Schumann", photo: "richard", role: "Graphic Designer", twitter: "schumanncombo"],
+            [name: "Igor Artamonov", twitter: "splix", github: "splix", nick: "splix", role: "Founder & CTO", photo: "splix"],
         ]
         Collections.shuffle(people);
         people.each { m ->
         %>
         <div class="col-lg-3 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1 member">
-            <div class="pic">
-                <img alt="member-image" class="img-responsive" src="${r 'media/' + m.nick + '.jpg'}">
-                <div class="social">
-                    <% if (m.github != null) { %>
-                    <a href="https://github.com/${m.github}"><i class="mdi mdi-github-circle text-on-primary"></i></a>
-                    <% } %>
-                    <% if (m.twitter != null) { %>
-                    <a href="https://twitter.com/${m.twitter}"><i class="mdi mdi-twitter text-on-primary"></i></a>
-                    <% } %>
-                </div>
-            </div>
-            <div class="info">
-                <h3><% if (m.name != null) { %>${m.name} <% } %><small>@${m.nick}</small></h3>
-                <h4>${m.role}</h4>
-            </div>
-        </div>
-        <% } %>
-    </div>
-
-    <div class="row team4">
-        <h2 class="heading">Management and non-tech</h2>
-
-        <div class="col-md-8 col-md-offset-3 col-xs-12">
-        <%
-        people = [
-        [name: "Richard Schumann", photo: "richard", role: "Graphic Designer", twitter: "schumanncombo"],
-        [name: "Igor Artamonov", twitter: "splix", github: "splix", nick: "splix", role: "Tech Lead", photo: "splix"],
-        ]
-        Collections.shuffle(people);
-        people.each { m ->
-        %>
-        <div class="col-sm-4 col-xs-6 member">
             <div class="pic">
                 <img alt="member-image" class="img-responsive" src="${r 'media/' + m.photo + '.jpg'}">
                 <div class="social">
@@ -99,7 +68,6 @@ features: banner
             </div>
         </div>
         <% } %>
-        </div>
     </div>
 
     <div class="row team6" style="padding-top: 50px">

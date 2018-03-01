@@ -1,0 +1,34 @@
+---
+layout: article
+title: March 1st Dev Update
+published: true
+date: 01.03.2018 09:00
+---
+
+=== projects
+
+https://github.com/ethereumproject/go-ethereum/releases/tag/v5.0.0[**ethereumproject/go-ethereum**] released v5.0.0, which includes the consensus-critical protocol upgrade implementing https://github.com/ethereumproject/ECIPs/pull/87[ECIP-1041], the Difficulty Bomb Defusion. If you're running geth, **please upgrade**! The release also includes a fix allowing `chainID` to be configured more flexibly, and ensures unit test compatibility with Go v1.10.
+
+https://github.com/ethereumproject/emerald-wallet[**emerald-wallet**] released https://github.com/ethereumproject/emerald-wallet/releases/tag/v0.8.1[v0.8.1], a bugfix release following up RC2 and fixing a MacOS packaging issue as well as compatibility with Parity transaction validation. Thanks to everyone who has contributed issues -- your feedback is helpful and appreciated.
+
+https://github.com/ETCDEVTeam/emerald-js-ui[**emerald-js-ui**] has been moving toward Typescript implementation, and https://github.com/ETCDEVTeam/emerald-js[**emerald-js**] is underway with implementing support for web3.
+
+https://github.com/ethereumproject/sputnikvm[**sputnikvm**] released https://github.com/ethereumproject/sputnikvm/releases/tag/v0.10.0[v0.10.0], including support for EIP140, EIP161, EIP170, EIP 196, EIP197, EIP198, EIP211 and EIP214, for Ethereum, Ellaism, Ubiq, Musicoin and Expanse networks, as well as addressing a few other additions, changes, and fixes.
+
+Work has also begun on http://docs.etcdevteam.com[docs.etcdeavteam.com] as a place to unify API, usage, and other documentation for ETCDEV owned and maintained projects. Feel free to check it out and give us your feedback for these initial stages of development, or go ahead and contribute directly to https://github.com/ETCDEVTeam/docs-website[the source].
+
+---
+
+=== protocols
+
+* https://github.com/ethereumproject/ECIPs/pull/87[ECIP-1041] has passed human consensus and is now either implemented or scheduled for implementation in the major clients. Woohoo!!
+
+---
+
+We are extremely grateful to *the many volunteers and members of our community* for their ongoing contributions.
+
+---
+
+> Isaac - https://github.com/whilei[Github: @whilei] - Gitter: @whilei - Discord: @ia
+
+

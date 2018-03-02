@@ -1,8 +1,8 @@
 ---
 layout: article
-title: March 1st Dev Update
+title: March 2nd Dev Update
 published: true
-date: 01.03.2018 09:00
+date: 02.03.2018 09:00
 ---
 
 === projects
@@ -21,7 +21,7 @@ Work has also begun on http://docs.etcdevteam.com[docs.etcdeavteam.com] as a pla
 
 === protocols
 
-* https://github.com/ethereumproject/ECIPs/pull/87[ECIP-1041] has passed human consensus and is now either implemented or scheduled for implementation in the major clients. Woohoo!!
+* https://github.com/ethereumproject/ECIPs/blob/master/ECIPs/ECIP-1041.md[ECIP-1041] has passed human consensus and is now either implemented or scheduled for implementation in the major clients. Woohoo!!
 
 ---
 

@@ -1,0 +1,31 @@
+---
+layout: article
+title: April 4th Dev Update
+published: true
+date: 04.04.2018 09:00
+---
+
+=== projects
+
+https://github.com/ethereumproject/go-ethereum/releases/tag/v5.1.0[**ethereumproject/go-ethereum**] released v5.1.0, including countermeasures [Eclipse attack](https://www.cs.bu.edu/~goldbe/projects/eclipseEth) 1,2,3,4,5 and 6, additional `mlog` data points, refactored state sync to improve stability, and fixed `eth_sign` JSON-RPC API point to accept a data param and ETH-compatible return value. This release still includes the consensus-critical protocol upgrade implementing https://github.com/ethereumproject/ECIPs/pull/87[ECIP-1041], the Difficulty Bomb Defusion. If you're running geth, **please upgrade**!
+
+https://github.com/ethereumproject/emerald-wallet[**emerald-wallet**] released https://github.com/ethereumproject/emerald-wallet/releases/tag/v0.9.0[v0.9.0] as Release Candidate (RC) 3, with several bugs fixes including an issue with ERC20 adding, significant improvements to the UI including a new header, icons, warnings if not synced, and batched transaction data updates.
+
+https://github.com/ETCDEVTeam/emerald-cli[**emerald-cli**] released https://github.com/ETCDEVTeam/emerald-cli/releases[v0.21.0], which adds subcommands with additional help and http://docs.etcdevteam.com/html/emerald-cli/index.html[documentation] as well as some refactoring.
+
+
+---
+
+=== protocols
+
+* https://github.com/ethereumproject/ECIPs/blob/master/ECIPs/ECIP-1041.md[ECIP-1041] has passed human consensus and is now either implemented or scheduled for implementation in the major clients. Woohoo!! Please update your clients. Doing so will help us defeat the coersive Difficulty Bomb, preventing an "explosion" of difficulty which, if not thwarted, would result in expontentional growth of network difficulty and thus exponentatial degradation of miner profitability and network security.
+
+---
+
+We are extremely grateful to *the many volunteers and members of our community* for their ongoing contributions.
+
+---
+
+> Isaac - https://github.com/whilei[Github: @whilei] - Gitter: @whilei - Discord: @ia
+
+
